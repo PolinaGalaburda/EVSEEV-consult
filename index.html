@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVSEEV</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@700;800&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+      <div class="header__logo">
+        <h2>evseev</h2>
+      </div>
+      <nav class="header__nav">
+        <ul class="nav__menu">
+          <li class="nav__item nav__item_home">Home</li>
+          <li class="nav__item">Needs and demands</li>
+          <li class="nav__item">Services</li>
+          <li class="nav__item">About me</li>
+          <li class="nav__item">Contacts</li>
+        </ul>
+      </nav>
+    </div>
+      <div class="header__right">
+      <select
+        class="language-select"
+        id="language-select"
+        onchange="changeLanguage()"
+      >
+        <option class="language-select__option" value="en">EN</option>
+        <option class="language-select__option" value="fr">FR</option>
+        <option class="language-select__option" value="uk">UK</option>
+        <option class="language-select__option" value="ru">RU</option>
+      </select>
+      <div class="burger-menu">
+        <input class="burger-menu__input" id="burger" type="checkbox" />
+<label class="burger-menu__label" for="burger">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.25 16.5C30.25 17.006 29.8394 17.4167 29.3334 17.4167H14.6667C14.1607 17.4167 13.75 17.006 13.75 16.5C13.75 15.994 14.1607 15.5833 14.6667 15.5833H29.3334C29.8394 15.5833 30.25 15.994 30.25 16.5ZM29.3334 21.0833H14.6667C14.1607 21.0833 13.75 21.494 13.75 22C13.75 22.506 14.1607 22.9167 14.6667 22.9167H29.3334C29.8394 22.9167 30.25 22.506 30.25 22C30.25 21.494 29.8394 21.0833 29.3334 21.0833ZM29.3334 26.5833H14.6667C14.1607 26.5833 13.75 26.994 13.75 27.5C13.75 28.006 14.1607 28.4167 14.6667 28.4167H29.3334C29.8394 28.4167 30.25 28.006 30.25 27.5C30.25 26.994 29.8394 26.5833 29.3334 26.5833ZM39.4167 11.6875V32.3125C39.4167 36.96 36.96 39.4167 32.3125 39.4167H11.6875C7.04004 39.4167 4.58337 36.96 4.58337 32.3125V11.6875C4.58337 7.03999 7.04004 4.58333 11.6875 4.58333H32.3125C36.96 4.58333 39.4167 7.03999 39.4167 11.6875ZM37.5834 11.6875C37.5834 8.09233 35.9077 6.41666 32.3125 6.41666H11.6875C8.09237 6.41666 6.41671 8.09233 6.41671 11.6875V32.3125C6.41671 35.9077 8.09237 37.5833 11.6875 37.5833H32.3125C35.9077 37.5833 37.5834 35.9077 37.5834 32.3125V11.6875Z" fill="black"/>
+</svg>
+
+</label>
+          <ul class="burger-menu__menu">
+            <li class="burger-menu__item burger-menu__item_home">Home</li>
+            <li class="burger-menu__item">Needs and demands</li>
+            <li class="burger-menu__item">Services</li>
+            <li class="burger-menu__item">About me</li>
+            <li class="burger-menu__item">Contacts</li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btn btn__vanish">Leave a reaquest</button>
+    </div>
+    </header>
+    <main>
+      <section class="consultation">
+        <div class="consultation__block consultation__block_left">
+          <h1 class="consultation__h">
+            <span class="consultation__span">Medical</span> marketing
+            consultation
+          </h1>
+          <p class="consultation__p">
+            Learn how my carefully crafted strategies, state-of-the-art
+            technology, and in-depth understanding of the medical field can help
+            you effectively advance your practice and achieve new successes.
+          </p>
+          <button class="btn">Leave a request</button>
+        </div>
+        <div class="consultation__block consultation__block_right">
+          <img
+            class="consultation__block-img"
+            src="imgs/consultation-img.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="needs-and-requests">
+        <h1 class="headline">Needs and requests</h1>
+        <div class="needs-and-requests__containers">
+          <div
+            class="needs-and-requests__container needs-and-requests__container_left"
+          >
+            <p class="para">
+              Your Goals are My Priority. <br />
+              Let's understand your requirements and desires to create a
+              customized path to success for your medical practice.
+            </p>
+          </div>
+          <div
+            class="needs-and-requests__container needs-and-requests__container_right"
+          >
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25 9.375C19.1984 9.375 13.6344 11.6797 9.53204 15.782C5.42968 19.8844 3.125 25.4484 3.125 31.25C3.125 37.0516 5.42968 42.6156 9.53204 46.718C13.6344 50.8203 19.1984 53.125 25 53.125H28.3438C28.0472 51.0522 28.0472 48.9478 28.3438 46.875H25C20.856 46.875 16.8817 45.2288 13.9515 42.2985C11.0212 39.3683 9.375 35.394 9.375 31.25C9.375 27.106 11.0212 23.1317 13.9515 20.2015C16.8817 17.2712 20.856 15.625 25 15.625H50C52.3172 15.6245 54.6056 16.1395 56.6993 17.1325C58.7929 18.1256 60.6395 19.5719 62.1053 21.3666C63.571 23.1614 64.6192 25.2598 65.1739 27.5096C65.7286 29.7595 65.7759 32.1046 65.3125 34.375C67.1536 36.1803 68.6621 38.296 69.7688 40.625C71.3505 37.2904 72.0628 33.6098 71.8394 29.9259C71.616 26.242 70.4641 22.6744 68.4911 19.5554C66.518 16.4364 63.7878 13.8673 60.5547 12.0873C57.3216 10.3073 53.6907 9.37424 50 9.375H25ZM50 40.625C47.5136 40.625 45.129 41.6127 43.3709 43.3709C41.6127 45.129 40.625 47.5136 40.625 50C40.625 52.4864 41.6127 54.871 43.3709 56.6291C45.129 58.3873 47.5136 59.375 50 59.375C52.4864 59.375 54.871 58.3873 56.6291 56.6291C58.3873 54.871 59.375 52.4864 59.375 50C59.375 47.5136 58.3873 45.129 56.6291 43.3709C54.871 41.6127 52.4864 40.625 50 40.625ZM34.375 50C34.3756 47.5638 34.9458 45.1615 36.0402 42.9849C37.1346 40.8083 38.7227 38.9178 40.6779 37.4643C42.633 36.0108 44.9009 35.0346 47.3005 34.6137C49.7 34.1928 52.1648 34.3389 54.4979 35.0402C56.831 35.7415 58.9678 36.9786 60.7376 38.6528C62.5074 40.327 63.8612 42.3918 64.6909 44.6824C65.5206 46.9729 65.8032 49.4258 65.5161 51.845C65.229 54.2643 64.3802 56.5828 63.0375 58.6156L70.9594 66.5406L66.5406 70.9594L58.6156 63.0375C56.2605 64.5941 53.5276 65.4836 50.7074 65.6115C47.8873 65.7393 45.0851 65.1007 42.5989 63.7634C40.1126 62.4262 38.035 60.4404 36.587 58.017C35.139 55.5935 34.3746 52.8231 34.375 50Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Optimization of the business plan</h3>
+                <p>
+                  If you already have a functioning business but are not
+                  satisfied with your marketing results, I will help you review
+                  and optimize your business plan with a focus on effective
+                  marketing techniques.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.0659 7.47054C40.1547 5.41135 44.1675 5.36866 47.2994 7.36166L60.2844 15.6248H65.6244C67.3503 15.6248 68.7494 17.0239 68.7494 18.7498V46.8747C68.7494 48.6006 67.3503 49.9997 65.6244 49.9997H60.8753C61.0613 52.96 59.6666 55.9694 56.8609 57.6528L40.9441 67.2031C38.9347 68.4084 36.4403 68.3803 34.4731 67.1794C32.2847 69.1147 28.9159 69.3278 26.472 67.4075L10.4071 54.785C8.01209 52.9034 7.40644 49.6884 8.64309 47.1397C7.13275 45.9553 6.25 44.1419 6.25 42.2216V18.75C6.25 17.0241 7.64912 15.625 9.375 15.625H24.8342L37.0659 7.47054ZM13.0395 42.6413L15.2021 40.7491C19.0465 37.385 24.8763 37.7181 28.3125 41.4981L36.7569 50.7869C39.4741 53.7759 39.9697 58.1672 37.9934 61.6844L53.6453 52.2934C54.5247 51.7659 54.8428 50.7113 54.515 49.8228L40.6803 30.4547C39.9031 29.3668 38.52 28.8937 37.2394 29.2779L29.473 31.6078C26.1695 32.5988 22.5887 31.6959 20.15 29.2573L19.2351 28.3424C17.46 26.5674 17.001 24.0412 17.748 21.875H12.5V42.2216L13.0395 42.6413ZM43.9441 12.6346C42.9 11.9702 41.5625 11.9844 40.5328 12.6708L23.6545 23.923L24.5694 24.8379C25.3823 25.6508 26.5759 25.9518 27.6771 25.6214L35.4434 23.2915C39.2853 22.1389 43.435 23.5581 45.7663 26.822L57.8575 43.7497H62.4994V21.8748H60.2844C59.0956 21.8748 57.9316 21.5359 56.9287 20.8977L43.9441 12.6346ZM19.3178 45.4525L14.2685 49.8706L30.3334 62.4931L32.5331 58.6434C33.205 57.4678 33.0431 55.9931 32.1322 54.9909L23.6879 45.7022C22.5425 44.4422 20.5992 44.3313 19.3178 45.4525Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Choosing a marketing partner</h3>
+                <p>
+                  If you're deciding whether to choose a marketing agency or
+                  build an in-house marketing team, I'll help you decide based
+                  on your goals and budget.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.25 40.625H25V65.625H6.25V40.625ZM50 25H68.75V65.625H50V25ZM28.125 9.375H46.875V65.625H28.125V9.375ZM12.5 46.875V59.375H18.75V46.875H12.5ZM34.375 15.625V59.375H40.625V15.625H34.375ZM56.25 31.25V59.375H62.5V31.25H56.25Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Strategies for a new clinic</h3>
+                <p>
+                  If you have just opened a clinic but are struggling with how
+                  to effectively utilize equipment and resources, I will provide
+                  you with strategic approaches to successfully launch and grow
+                  your business.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.5 68.75C20.2411 68.75 6.25 54.7588 6.25 37.5C6.25 20.2411 20.2411 6.25 37.5 6.25C54.7588 6.25 68.75 20.2411 68.75 37.5C68.75 54.7588 54.7588 68.75 37.5 68.75ZM30.3438 61.4606C27.3357 55.0809 25.4916 48.0444 25.0853 40.625H12.6934C13.9313 50.5516 20.9887 58.6709 30.3438 61.4606ZM31.3459 40.625C31.8159 48.2463 33.9931 55.4053 37.5 61.725C41.0069 55.4053 43.1841 48.2463 43.6541 40.625H31.3459ZM62.3066 40.625H49.9147C49.5084 48.0444 47.6644 55.0809 44.6562 61.4606C54.0112 58.6709 61.0688 50.5516 62.3066 40.625ZM12.6934 34.375H25.0853C25.4916 26.9555 27.3357 19.919 30.3438 13.5393C20.9887 16.3292 13.9313 24.4484 12.6934 34.375ZM31.3459 34.375H43.6541C43.1841 26.7538 41.0069 19.5945 37.5 13.275C33.9931 19.5945 31.8159 26.7538 31.3459 34.375ZM44.6562 13.5393C47.6644 19.919 49.5084 26.9555 49.9147 34.375H62.3066C61.0688 24.4484 54.0112 16.3292 44.6562 13.5393Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Developing an online presence</h3>
+                <p>
+                  If you want to improve your clinic's online visibility, I can
+                  help you develop a strategy that will attract more potential
+                  patients through your website and social media.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.2719 6.57434C26.892 5.15649 22.1306 7.12868 20.0361 11.2284L17.5181 16.157C17.2189 16.7426 16.7426 17.2189 16.157 17.5181L11.2283 20.0362C7.12862 22.1307 5.15643 26.8921 6.57427 31.2719L8.27884 36.5376C8.48134 37.1632 8.48134 37.8369 8.27884 38.4626L6.57427 43.7282C5.15643 48.1082 7.12862 52.8694 11.2283 54.9641L16.157 57.4819C16.7426 57.7813 17.2189 58.2576 17.5181 58.8432L20.0361 63.7719C22.1306 67.8716 26.892 69.8438 31.2719 68.426L36.5375 66.7213C37.1631 66.5188 37.8369 66.5188 38.4625 66.7213L43.7281 68.426C48.1081 69.8438 52.8694 67.8716 54.9641 63.7719L57.4819 58.8432C57.7812 58.2576 58.2575 57.7813 58.8431 57.4819L63.7719 54.9641C67.8716 52.8694 69.8437 48.1082 68.4259 43.7282L66.7212 38.4626C66.5187 37.8369 66.5187 37.1632 66.7212 36.5376L68.4259 31.2719C69.8437 26.8921 67.8716 22.1307 63.7719 20.0362L58.8431 17.5181C58.2575 17.2189 57.7812 16.7426 57.4819 16.157L54.9641 11.2284C52.8694 7.12868 48.1081 5.15649 43.7281 6.57434L38.4625 8.2789C37.8369 8.4814 37.1631 8.48143 36.5375 8.2789L31.2719 6.57434ZM25.6018 14.0719C26.3 12.7053 27.8871 12.0479 29.3471 12.5206L34.6128 14.2251C36.4897 14.8327 38.5103 14.8327 40.3872 14.2251L45.6531 12.5206C47.1128 12.0479 48.7 12.7053 49.3981 14.0719L51.9162 19.0006C52.8137 20.7574 54.2428 22.1862 55.9997 23.0838L60.9281 25.6019C62.2947 26.3001 62.9522 27.8872 62.4797 29.3472L60.775 34.6129C60.1675 36.4897 60.1675 38.5104 60.775 40.3872L62.4797 45.6532C62.9522 47.1129 62.2947 48.7001 60.9281 49.3982L55.9997 51.9163C54.2428 52.8138 52.8137 54.2429 51.9162 55.9997L49.3981 60.9282C48.7 62.2947 47.1128 62.9522 45.6531 62.4797L40.3872 60.7751C38.5103 60.1676 36.4897 60.1676 34.6128 60.7751L29.3471 62.4797C27.8871 62.9522 26.3 62.2947 25.6018 60.9282L23.0837 55.9997C22.1862 54.2429 20.7573 52.8138 19.0005 51.9163L14.0718 49.3982C12.7053 48.7001 12.0479 47.1129 12.5205 45.6532L14.225 40.3872C14.8326 38.5104 14.8326 36.4897 14.225 34.6129L12.5205 29.3472C12.0479 27.8872 12.7053 26.3001 14.0718 25.6019L19.0005 23.0838C20.7573 22.1862 22.1862 20.7574 23.0837 19.0006L25.6018 14.0719ZM21.1237 36.7419L34.3819 50.0001L56.4791 27.9031L52.0597 23.4837L34.3819 41.1613L25.5432 32.3222L21.1237 36.7419Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Reputation management</h3>
+                <p>
+                  If you're concerned about reviews and your clinic's
+                  reputation, I'll provide practical tips on managing reviews to
+                  maintain a positive perception.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.1659 56.25H34.375V40.625H40.625V56.25H43.8341C44.2466 52.495 46.1628 49.3953 49.2738 46.0081C49.6241 45.6269 51.8712 43.3013 52.1378 42.9691C54.7869 39.6659 56.25 35.5781 56.25 31.25C56.25 20.8947 47.8553 12.5 37.5 12.5C27.1447 12.5 18.75 20.8947 18.75 31.25C18.75 35.5759 20.2117 39.6616 22.8582 42.9637C23.1251 43.2969 25.3775 45.6287 25.7236 46.0056C28.8364 49.395 30.7532 52.495 31.1659 56.25ZM31.25 62.5V65.625H43.75V62.5H31.25ZM17.9811 46.8725C14.5514 42.5928 12.5 37.1609 12.5 31.25C12.5 17.4429 23.6929 6.25 37.5 6.25C51.3072 6.25 62.5 17.4429 62.5 31.25C62.5 37.1641 60.4463 42.5984 57.0134 46.8794C55.075 49.2962 50 53.125 50 57.8125V65.625C50 69.0769 47.2019 71.875 43.75 71.875H31.25C27.7982 71.875 25 69.0769 25 65.625V57.8125C25 53.125 19.9206 49.2925 17.9811 46.8725Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Efficiency analysis</h3>
+                <p>
+                  If you would like to evaluate the effectiveness of previous
+                  marketing efforts, I will provide analysis and recommendations
+                  for future improvements.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.375 57.8125V15.625C9.375 10.4473 13.5723 6.25 18.75 6.25H62.5C64.2259 6.25 65.625 7.64912 65.625 9.375V65.625C65.625 67.3509 64.2259 68.75 62.5 68.75H20.3125C14.2719 68.75 9.375 63.8531 9.375 57.8125ZM59.375 62.5V53.125H20.3125C17.7237 53.125 15.625 55.2238 15.625 57.8125C15.625 60.4012 17.7237 62.5 20.3125 62.5H59.375ZM31.25 12.5H18.75C17.0241 12.5 15.625 13.8991 15.625 15.625V47.9275C17.0457 47.2525 18.635 46.875 20.3125 46.875H59.375V12.5H53.125V37.5L42.1875 31.25L31.25 37.5V12.5Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Brand development</h3>
+                <p>
+                  If you are looking to build a recognizable brand for your
+                  clinic, I can help you develop strategies to help strengthen
+                  your position in the marketplace.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M53.125 18.75C51.3991 18.75 50 17.3509 50 15.625C50 13.8991 51.3991 12.5 53.125 12.5C54.8509 12.5 56.25 13.8991 56.25 15.625C56.25 17.3509 54.8509 18.75 53.125 18.75ZM53.125 25C58.3028 25 62.5 20.8027 62.5 15.625C62.5 10.4473 58.3028 6.25 53.125 6.25C47.9472 6.25 43.75 10.4473 43.75 15.625C43.75 20.8027 47.9472 25 53.125 25ZM21.875 9.375C14.9714 9.375 9.375 14.9714 9.375 21.875V28.125H15.625V21.875C15.625 18.4232 18.4232 15.625 21.875 15.625H31.25V9.375H21.875ZM53.125 65.625C60.0284 65.625 65.625 60.0284 65.625 53.125V46.875H59.375V53.125C59.375 56.5769 56.5769 59.375 53.125 59.375H43.75V65.625H53.125ZM25 40.625C25 38.8991 23.6009 37.5 21.875 37.5C20.1491 37.5 18.75 38.8991 18.75 40.625C18.75 42.3509 20.1491 43.75 21.875 43.75C23.6009 43.75 25 42.3509 25 40.625ZM31.25 40.625C31.25 45.8028 27.0527 50 21.875 50C16.6973 50 12.5 45.8028 12.5 40.625C12.5 35.4472 16.6973 31.25 21.875 31.25C27.0527 31.25 31.25 35.4472 31.25 40.625ZM53.125 34.375C49.6731 34.375 46.875 37.1731 46.875 40.625H40.625C40.625 33.7216 46.2216 28.125 53.125 28.125C60.0284 28.125 65.625 33.7216 65.625 40.625H59.375C59.375 37.1731 56.5769 34.375 53.125 34.375ZM15.625 65.625C15.625 62.1731 18.4232 59.375 21.875 59.375C25.3268 59.375 28.125 62.1731 28.125 65.625H34.375C34.375 58.7216 28.7786 53.125 21.875 53.125C14.9714 53.125 9.375 58.7216 9.375 65.625H15.625Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Adapting to change</h3>
+                <p>
+                  In a changing business environment, I will help you adapt to
+                  new requirements and develop plans for successful growth.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M62.3066 25H65.625C69.0769 25 71.875 27.7982 71.875 31.25V43.75C71.875 47.2019 69.0769 50 65.625 50H62.3066C60.7688 62.3322 50.2487 71.875 37.5 71.875V65.625C47.8553 65.625 56.25 57.2303 56.25 46.875V28.125C56.25 17.7697 47.8553 9.375 37.5 9.375C27.1447 9.375 18.75 17.7697 18.75 28.125V50H9.375C5.92322 50 3.125 47.2019 3.125 43.75V31.25C3.125 27.7982 5.92322 25 9.375 25H12.6934C14.2312 12.6678 24.7512 3.125 37.5 3.125C50.2487 3.125 60.7688 12.6678 62.3066 25ZM9.375 31.25V43.75H12.5V31.25H9.375ZM62.5 31.25V43.75H65.625V31.25H62.5ZM24.2482 49.3278L27.5612 44.0272C30.4425 45.8319 33.8494 46.875 37.5 46.875C41.1506 46.875 44.5575 45.8319 47.4388 44.0272L50.7519 49.3278C46.91 51.7341 42.3675 53.125 37.5 53.125C32.6325 53.125 28.0901 51.7341 24.2482 49.3278Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Training and consultations</h3>
+                <p>
+                  Q&A sessions and one-on-one consultations to provide you with
+                  practical knowledge and guidance on medical marketing.
+                </p>
+              </div>
+            </div>
+            <div class="needs-and-requests__block">
+              <div class="needs-and-requests__icon">
+                <svg
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.625 9.375V59.375H65.625V65.625H9.375V9.375H15.625ZM63.4153 19.6653L67.8347 24.0847L50 41.9194L40.625 32.5469L27.2097 45.9597L22.7903 41.5403L40.625 23.7056L50 33.0781L63.4153 19.6653Z"
+                    fill="#FF274E"
+                  />
+                </svg>
+              </div>
+              <div class="needs-and-requests__info">
+                <h3>Focused growth</h3>
+                <p>
+                  If your goal is to attract new patients and strengthen your
+                  market position, I will help you develop strategies for
+                  sustainable growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__block services__block_white">
+          <h1 class="headline">Services</h1>
+          <p class="para">
+            As a consultant, my job is to provide an assessment of the current
+            situation, advice and recommendations on how to optimize the medical
+            marketing of the clinic.
+          </p>
+        </div>
+        <div class="services__block">
+            <h3 class="services__h3">Audit of marketing strategies</h3>
+            <p class="services__p">
+              Analyze current marketing methods and strategies, identifying
+              their effectiveness and recommending improvements.
+            </p>
+            <span class="services__number">01</span>
+            </div>
+          <div class="services__block">
+            <h3 class="services__h3">Online presence assessment</h3>
+            <p class="services__p">
+              Detailed study of website and social media accounts, evaluating
+              their optimization to attract target audience.
+            </p>
+            <span class="services__number">02</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Competitor research</h3>
+            <p class="services__p">
+              Analyzing competitors in the market, identifying their strengths
+              and weaknesses, providing recommendations on overcoming
+              competitive barriers.
+            </p>
+            <span class="services__number">03</span>
+          </div>
+          <div class="services__block" >
+            <h3 class="services__h3">Strategic planning</h3>
+            <p class="services__p">
+              Develop short- and long-term marketing strategies that are
+              tailored to the clinic and the needs of the target audience.
+            </p>
+            <span class="services__number">04</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Reputation analysis</h3>
+            <p class="services__p">
+              Researching the reputation of the clinic among patients, analyzing
+              feedback and providing recommendations for reputation management.
+            </p>
+            <span class="services__number">05</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Selection of key messages</h3>
+            <p class="services__p">
+              Developing unique selling propositions and key messages that
+              emphasize the benefits of the clinic.
+            </p>
+            <span class="services__number">06</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Staff training</h3>
+            <p class="services__p">
+              Organize training sessions for medical staff on communicating with
+              patients and understanding basic marketing principles.
+            </p>
+            <span class="services__number">07</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Conducting a SWOT analysis</h3>
+            <p class="services__p">
+              Identification of the clinic's strengths and weaknesses, as well
+              as opportunities and threats in the market, in order to determine
+              the best strategic moves.
+            </p>
+            <span class="services__number">08</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Analyzing the results</h3>
+            <p class="services__p">
+              Evaluate the effectiveness of previous marketing and advertising
+              campaigns and provide recommendations for future improvements.
+            </p>
+            <span class="services__number">09</span>
+          </div>
+          <div class="services__block">
+            <h3 class="services__h3">Strategic growth</h3>
+            <p class="services__p">
+              Assist in identifying ways to expand the clinic, attract new
+              patients and build loyalty of existing patients.
+            </p>
+            <span class="services__number">10</span>
+          </div>
+        </div>
+      </section>
+      <section class="request">
+        <div class="request__block">
+        <h1 class="request__h1">Do you want to discuss your project right now?</h1>
+        <button class="btn btn__border">Leave a request</button>
+      </div>
+      <div class="request__block">
+        <img class="request__img" src="imgs/laptop-2298286.png" alt="" />
+      </div>
+      </section>
+      <section class="about-me">
+        <h1 class="about-me__h1">About me</h1>
+        <div class="about-me__content">
+          <div class="about-me__intro">
+            <p class="about-me__p">
+            My career in the medical industry has been woven with success
+            stories. Over the years, I have managed a network of clinics,
+            creating innovative strategies that not only attracted patients but
+            also improved the quality of care. My experienced leadership helped
+            unlock the potential of each clinic, making them an integral part of
+            healthcare.
+            </p>
+            <p class="about-me__p">
+            In addition, I founded and successfully ran a company specializing
+            in medical education and equipment trading. My passion for
+            innovation has allowed me to create a platform that not only
+            educates medical professionals, but also provides them with
+            state-of-the-art equipment and supplies for optimal practice.
+            </p>
+            <p class="about-me__p">
+            My experience in managing clinics and healthcare businesses has
+            given me a unique perspective on the challenges and opportunities of
+            the medical industry. As a medical marketing expert, I am ready to
+            share this knowledge and help you create a successful strategy that
+            will lead to the growth of your clinic and strengthen your market
+            position.
+            </p>
+          </div>
+          <div class="about-me__name-block">
+            <p class="about-me__para-name">Leonid Evseev</p>
+          </div>
+          <div class="about-me__img-block">
+            <img class="about-me__img" src="imgs/Leonid.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="request-form">
+        <h1 class="request-form__h1">Let's disscuss your project!</h1>
+        <form class="form" action="polinagalaburda98@gmail.com" method="post">
+          <div class="form__name-mail">
+            <input class="form__name-mail-input" type="text" placeholder="Name" />
+            <input class="form__name-mail-input" type="email" placeholder="pochtamail@gmail.com" />
+          </div>
+          <div class="form__discription">
+            <input class="form__description-input" type="text" placeholder="Task/Problem Description..." />
+          </div>
+          <div class="form__agree">
+            <input class="form__agree-input" type="checkbox" id="agree" name="agree" required />
+            <label class="form__agree-label" for="agree"
+              >I agree to the processing of my personal data within the legal
+              framework.</label
+            >
+          </div>
+          <button class="btn btn__large" type="submit">Leave a request</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__intro">
+        <h2 class="footer__logo">evseev</h2>
+        <p class="footer__p">
+          Your Goals are My Priority. <br>Let's understand your requirements and
+          desires to create a customized path to success for your medical
+          practice.
+        </p>
+        <div class="footer__social">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.4933 21.2493L25.0632 17.6314H21.5525V15.2798C21.5525 14.2906 22.0426 13.3239 23.6099 13.3239H25.2285V10.2431C24.2859 10.0929 23.3335 10.0117 22.3789 10C19.4894 10 17.603 11.7354 17.603 14.8728V17.6314H14.4V21.2493H17.603V30H21.5525V21.2493H24.4933Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.486 20.1218C16.486 18.1112 18.1164 16.481 20.1281 16.481C22.1399 16.481 23.7711 18.1112 23.7711 20.1218C23.7711 22.1323 22.1399 23.7626 20.1281 23.7626C18.1164 23.7626 16.486 22.1323 16.486 20.1218ZM14.5167 20.1218C14.5167 23.2191 17.0289 25.7299 20.1281 25.7299C23.2274 25.7299 25.7396 23.2191 25.7396 20.1218C25.7396 17.0244 23.2274 14.5137 20.1281 14.5137C17.0289 14.5137 14.5167 17.0244 14.5167 20.1218ZM24.6504 14.2913C24.6503 14.5505 24.7271 14.8039 24.8711 15.0195C25.0151 15.2351 25.2198 15.4032 25.4594 15.5025C25.699 15.6018 25.9627 15.6278 26.2171 15.5773C26.4715 15.5269 26.7052 15.4022 26.8887 15.2189C27.0721 15.0357 27.1971 14.8022 27.2478 14.548C27.2985 14.2938 27.2727 14.0303 27.1735 13.7908C27.0743 13.5513 26.9063 13.3465 26.6907 13.2024C26.4752 13.0583 26.2216 12.9814 25.9623 12.9812H25.9618C25.6141 12.9814 25.2807 13.1195 25.0348 13.3651C24.7889 13.6107 24.6507 13.9439 24.6504 14.2913ZM15.7132 29.0117C14.6477 28.9632 14.0686 28.7858 13.6838 28.636C13.1736 28.4375 12.8095 28.201 12.4268 27.819C12.044 27.4371 11.8071 27.0736 11.6093 26.5637C11.4593 26.1792 11.2819 25.6003 11.2334 24.5355C11.1804 23.3843 11.1699 23.0385 11.1699 20.1219C11.1699 17.2053 11.1813 16.8604 11.2334 15.7082C11.2819 14.6434 11.4607 14.0656 11.6093 13.6801C11.808 13.1701 12.0445 12.8063 12.4268 12.4238C12.809 12.0413 13.1727 11.8045 13.6838 11.6069C14.0684 11.4569 14.6477 11.2796 15.7132 11.2312C16.8651 11.1782 17.2111 11.1677 20.1281 11.1677C23.0452 11.1677 23.3915 11.1791 24.5444 11.2312C25.6099 11.2797 26.188 11.4583 26.5738 11.6069C27.084 11.8045 27.4481 12.0418 27.8308 12.4238C28.2136 12.8058 28.4496 13.1701 28.6482 13.6801C28.7983 14.0645 28.9757 14.6434 29.0242 15.7082C29.0771 16.8604 29.0877 17.2053 29.0877 20.1219C29.0877 23.0385 29.0771 23.3833 29.0242 24.5355C28.9756 25.6003 28.7973 26.1791 28.6482 26.5637C28.4496 27.0736 28.213 27.4374 27.8308 27.819C27.4486 28.2007 27.084 28.4375 26.5738 28.636C26.1891 28.7859 25.6099 28.9633 24.5444 29.0117C23.3925 29.0646 23.0465 29.0752 20.1281 29.0752C17.2098 29.0752 16.8647 29.0646 15.7132 29.0117ZM15.6227 9.26634C14.4593 9.31928 13.6644 9.50364 12.9701 9.77362C12.2511 10.0524 11.6425 10.4265 11.0343 11.0334C10.426 11.6403 10.0527 12.2495 9.77377 12.9681C9.50362 13.6623 9.31916 14.4564 9.26618 15.619C9.21232 16.7835 9.2 17.1558 9.2 20.1218C9.2 23.0877 9.21232 23.46 9.26618 24.6245C9.31916 25.7873 9.50362 26.5812 9.77377 27.2755C10.0527 27.9936 10.4261 28.6036 11.0343 29.2102C11.6424 29.8168 12.2511 30.1903 12.9701 30.4699C13.6657 30.7399 14.4593 30.9243 15.6227 30.9772C16.7885 31.0302 17.1604 31.0434 20.1281 31.0434C23.0959 31.0434 23.4684 31.031 24.6336 30.9772C25.797 30.9243 26.5915 30.7399 27.2862 30.4699C28.0047 30.1903 28.6138 29.8171 29.222 29.2102C29.8302 28.6033 30.2027 27.9936 30.4825 27.2755C30.7526 26.5812 30.938 25.7872 30.9901 24.6245C31.0431 23.4592 31.0554 23.0877 31.0554 20.1218C31.0554 17.1558 31.0431 16.7835 30.9901 15.619C30.9371 14.4563 30.7526 13.6619 30.4825 12.9681C30.2027 12.2499 29.8293 11.6412 29.222 11.0334C28.6148 10.4255 28.0047 10.0524 27.287 9.77362C26.5915 9.50364 25.797 9.31841 24.6345 9.26634C23.4693 9.21339 23.0967 9.2002 20.129 9.2002C17.1613 9.2002 16.7885 9.21251 15.6227 9.26634Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31.0563 20.1283C31.0563 26.1638 26.1636 31.0565 20.1281 31.0565C14.0927 31.0565 9.2 26.1638 9.2 20.1283C9.2 14.0929 14.0927 9.2002 20.1281 9.2002C26.1636 9.2002 31.0563 14.0929 31.0563 20.1283ZM21.1754 16.7751C19.2979 17.586 13.8847 19.889 13.8847 19.889C12.6018 20.408 13.3527 20.8945 13.3527 20.8945C13.3527 20.8945 14.4479 21.2838 15.3866 21.5757C16.3253 21.8676 16.826 21.5433 16.826 21.5433C16.826 21.5433 19.0163 20.0512 21.2379 18.4618C22.8024 17.3589 22.427 18.2672 22.0515 18.6564C21.2379 19.4998 19.8925 20.8296 18.766 21.9001C18.2654 22.3542 18.5157 22.7434 18.7347 22.938C19.3717 23.4968 20.8721 24.513 21.5533 24.9744C21.742 25.1022 21.8679 25.1875 21.8951 25.2086C22.0515 25.3384 22.9276 25.9222 23.4596 25.7924C23.9915 25.6627 24.0541 24.9166 24.0541 24.9166C24.0541 24.9166 24.4608 22.2569 24.8364 19.8241C24.9059 19.3465 24.9754 18.8788 25.0403 18.4428C25.2088 17.3094 25.3457 16.3894 25.3683 16.0615C25.4622 14.9586 24.3357 15.4127 24.3357 15.4127C24.3357 15.4127 21.8951 16.4507 21.1754 16.7751Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.98819 28.6747H13.694V19.675L8.39999 15.7045V27.0865C8.39999 27.9653 9.11203 28.6747 9.98819 28.6747Z"
+              fill="white"
+            />
+            <path
+              d="M26.3995 28.6747H30.1053C30.9841 28.6747 31.6935 27.9627 31.6935 27.0865V15.7045L26.3995 19.675"
+              fill="white"
+            />
+            <path
+              d="M26.3995 12.7929V19.675L31.6935 15.7045V13.587C31.6935 11.6229 29.4515 10.5032 27.8818 11.6812"
+              fill="white"
+            />
+            <path
+              d="M13.694 19.675L13.694 12.7928L20.0468 17.5574L26.3995 12.7929V19.675L20.0468 24.4395"
+              fill="white"
+            />
+            <path
+              d="M8.39999 13.587V15.7045L13.694 19.675L13.694 12.7928L12.2117 11.6812C10.6393 10.5032 8.39999 11.6229 8.39999 13.587Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.8153 9.2002C9.92347 9.2002 9.2 9.90165 9.2 10.7658V29.4914C9.2 30.3556 9.92356 31.0565 10.8153 31.0565H29.441C30.3331 31.0565 31.0563 30.3555 31.0563 29.4911V10.7658C31.0563 9.90165 30.3331 9.2002 29.441 9.2002H10.8153ZM15.8417 17.6513V27.4911H12.5711V17.6513H15.8417ZM16.0573 14.6082C16.0573 15.5525 15.3474 16.3081 14.2071 16.3081L14.1857 16.308C13.088 16.308 12.3784 15.5524 12.3784 14.6082C12.3784 13.6425 13.1094 12.908 14.2288 12.908C15.3474 12.908 16.036 13.6425 16.0573 14.6082ZM20.9224 27.4911H17.652C17.652 27.4911 17.6949 18.5747 17.6522 17.6516H20.9226V19.0444C21.3574 18.3741 22.1355 17.4206 23.8702 17.4206C26.022 17.4206 27.6352 18.827 27.6352 21.8492V27.4911H24.365V22.2276C24.365 20.9047 23.8914 20.0025 22.7083 20.0025C21.8046 20.0025 21.2664 20.611 21.0301 21.1988C20.9437 21.4085 20.9224 21.703 20.9224 21.9967V27.4911Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li class="footer__nav-item">Home</li>
+          <li class="footer__nav-item">Needs and requests</li>
+          <li class="footer__nav-item">Services</li>
+          <li class="footer__nav-item">About me</li>
+          <li class="footer__nav-item">Contacts</li>
+          <li class="footer__nav-item">Privacy Policy</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
