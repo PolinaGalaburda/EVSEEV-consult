@@ -45,7 +45,7 @@ p {
 }
 @media (max-width: 425px) {
   p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
