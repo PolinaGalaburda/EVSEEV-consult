@@ -581,6 +581,11 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 425px) {
+  .form__name-mail-input {
+    font-size: 16px;
+  }
+}
 .form__name-mail-input::placeholder {
   opacity: 0.2;
 }
@@ -593,6 +598,11 @@ button {
   height: 161px;
   border-radius: 20px;
   padding: 16px 32px;
+}
+@media (max-width: 425px) {
+  .form__description-input {
+    font-size: 16px;
+  }
 }
 .form__description-input::placeholder {
   opacity: 0.2;
@@ -611,7 +621,7 @@ button {
   margin-right: 16px;
 }
 .form__agree-label {
-  font-size: 10px;
+  font-size: 12px;
   opacity: 0.6;
 }
 
