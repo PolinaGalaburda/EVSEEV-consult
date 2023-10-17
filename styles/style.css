@@ -126,6 +126,10 @@ button {
   text-decoration-thickness: 2px;
 }
 
+.header__a {
+  color: #FF274E;
+}
+
 .header {
   display: flex;
   align-items: center;
