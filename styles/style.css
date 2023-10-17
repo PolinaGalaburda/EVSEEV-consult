@@ -3,6 +3,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 div {
   margin: 0;
 }
@@ -34,6 +38,17 @@ h3 {
 @media (max-width: 425px) {
   h3 {
     font-size: 18px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 425px) {
+  h4 {
+    font-size: 16px;
   }
 }
 
@@ -709,7 +724,42 @@ button {
   cursor: pointer;
   font-weight: 300;
 }
+.footer__a {
+  color: white;
+}
 
 .footer__social svg {
   cursor: pointer;
+}
+
+.privacy-policy {
+  padding: 7% 9% 0 9%;
+}
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 32px 24px 0 24px;
+  }
+}
+.privacy-policy__headline {
+  text-align: center;
+}
+.privacy-policy__intro {
+  opacity: 1;
+}
+.privacy-policy__subheadline {
+  margin: 0;
+}
+.privacy-policy__p {
+  margin: 0;
+  margin-bottom: 18px;
+  opacity: 1;
+}
+@media (max-width: 425px) {
+  .privacy-policy__p {
+    margin-bottom: 16px;
+  }
+}
+.privacy-policy__span {
+  font-size: 18px;
+  font-weight: 300;
 }

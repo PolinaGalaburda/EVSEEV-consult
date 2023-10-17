@@ -3,6 +3,10 @@ body {
    box-sizing: border-box;
 }
 
+a {
+   text-decoration: none;
+}
+
 div {
    margin: 0;
 }
@@ -32,6 +36,16 @@ h3 {
 
    @media (max-width:425px) {
       font-size: 18px;
+   }
+}
+
+h4 {
+   font-size: 18px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+
+   @media (max-width:425px) {
+      font-size: 16px;
    }
 }
 
@@ -748,8 +762,50 @@ button {
       cursor: pointer;
       font-weight: 300;
    }
+
+   &__a {
+      color: white;
+   }
 }
 
 .footer__social svg {
    cursor: pointer;
+}
+
+.privacy-policy {
+   padding: 7% 9% 0 9%;
+
+   @media (max-width: 768px) {
+      padding: 32px 24px 0 24px;
+   }
+
+
+   &__headline {
+      text-align: center;
+   }
+
+   &__intro {
+      opacity: 1;
+   }
+
+   &__list {}
+
+   &__subheadline {
+      margin: 0;
+   }
+
+   &__p {
+      margin: 0;
+      margin-bottom: 18px;
+      opacity: 1;
+
+      @media (max-width:425px) {
+         margin-bottom: 16px;
+      }
+   }
+
+   &__span {
+      font-size: 18px;
+      font-weight: 300;
+   }
 }
