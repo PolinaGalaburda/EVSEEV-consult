@@ -345,6 +345,10 @@ button {
    &__container {
       &_left {
          padding-right: 8.64%;
+
+         @media (max-width: 768px) {
+            padding-right: 0;
+         }
       }
 
       &_right {

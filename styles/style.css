@@ -329,6 +329,11 @@ button {
 .needs-and-requests__container_left {
   padding-right: 8.64%;
 }
+@media (max-width: 768px) {
+  .needs-and-requests__container_left {
+    padding-right: 0;
+  }
+}
 .needs-and-requests__container_right {
   display: flex;
   flex-direction: column;
