@@ -82,7 +82,11 @@ button {
 
 #burger:checked+label+ul {
    display: flex;
+   flex-direction: column;
+   gap: 32px;
+   transform: translateX(0);
 }
+
 
 #close-icon {
    display: none;
@@ -102,10 +106,6 @@ button {
    &__label {}
 
    &__menu {
-      display: flex;
-      gap: 32px;
-      flex-direction: column;
-      display: none;
       position: absolute;
       left: 0;
       padding: 32px 24px 56px 24px;
@@ -113,6 +113,10 @@ button {
       background-color: white;
       width: 100%;
       box-sizing: border-box;
+      transform: translateX(-100%);
+      /* Скрыть меню за пределами видимости */
+      transition: transform 0.3s ease-in-out;
+      /* Добавить анимацию */
    }
 
    &__item {
