@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   box-sizing: border-box;
@@ -117,9 +121,6 @@ button {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
 }
-.burger-menu__item:hover {
-  color: #FF274E;
-}
 .burger-menu__item_home {
   color: #FF274E;
   text-decoration: underline;
@@ -128,6 +129,12 @@ button {
 }
 
 .header__a {
+  color: black;
+}
+.header__a:hover {
+  color: #FF274E;
+}
+.header__a_home {
   color: #FF274E;
 }
 
@@ -216,6 +223,10 @@ button {
   display: block;
 }
 
+.btn__border:hover + .btn__border-a {
+  color: black;
+}
+
 .btn {
   font-size: 14px;
   border-radius: 25px;
@@ -240,6 +251,9 @@ button {
 .btn__border:hover {
   background-color: white;
   color: black;
+}
+.btn__border-a {
+  color: white;
 }
 .btn__large {
   border-radius: 15px;

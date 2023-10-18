@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    margin: 0 auto;
    box-sizing: border-box;
@@ -116,10 +120,6 @@ button {
       font-family: "Nunito", sans-serif;
       font-size: 24px;
 
-      &:hover {
-         color: #FF274E;
-      }
-
       &_home {
          color: #FF274E;
          text-decoration: underline;
@@ -130,7 +130,15 @@ button {
 }
 
 .header__a {
-   color: #FF274E;
+   color: black;
+
+   &:hover {
+      color: #FF274E;
+   }
+
+   &_home {
+      color: #FF274E;
+   }
 }
 
 
@@ -226,6 +234,10 @@ button {
    }
 }
 
+.btn__border:hover+.btn__border-a {
+   color: black;
+}
+
 .btn {
    font-size: 14px;
    border-radius: 25px;
@@ -251,6 +263,10 @@ button {
          background-color: white;
          color: black;
       }
+   }
+
+   &__border-a {
+      color: white;
    }
 
    &__large {
