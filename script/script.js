@@ -1,4 +1,5 @@
 "use strict";
+
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".language-select__btn");
   const options = document.querySelector(".language-select__options");
@@ -6,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   button.addEventListener("click", function () {
     options.style.display = options.style.display === "flex" ? "none" : "flex";
-    const icon = button.querySelector(".language-select__icon");
-    icon.style.transform = options.style.display === "flex" ? "rotate(180deg)" : "rotate(0)";
+    button.classList.toggle("open"); // Добавляем или удаляем класс "open" на кнопке
   });
 
   optionItems.forEach(function (item) {
@@ -24,12 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
       item.setAttribute("data-value", currentSelectedValue);
 
       options.style.display = "none";
-      const icon = button.querySelector(".language-select__icon");
-      icon.style.transform = "rotate(0)";
+      button.classList.remove("open"); // Удаляем класс "open" при выборе языка
     });
   });
-});
 
+  // Обработчик клика на документе для закрытия списка
+  document.addEventListener("click", function (event) {
+    if (!button.contains(event.target) && !options.contains(event.target)) {
+      options.style.display = "none";
+      button.classList.remove("open");
+    }
+  });
+});
 
 const burgerCheckbox = document.getElementById("burger"); // Отримайте посилання на чекбокс бургер-меню
 const openIcon = document.getElementById("open-icon"); // Отримайте посилання на іконку для відкритого стану

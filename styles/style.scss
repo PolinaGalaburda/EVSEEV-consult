@@ -228,6 +228,7 @@ button {
    }
 }
 
+
 .language-select {
    position: relative;
    display: inline-block;
@@ -241,10 +242,13 @@ button {
       font-size: 14px;
       display: flex;
       align-items: center;
-   }
 
-   &__icon {
-      transition: transform 0.5s;
+      &:after {
+         content: url('../imgs/angle-down.svg');
+         transition: transform 0.5s;
+         transform: rotate(0deg);
+      }
+
    }
 
    &__options {
@@ -274,9 +278,9 @@ button {
    }
 }
 
-.language-select.open .language-select__icon {
+.language-select__btn.open::after {
    transform: rotate(180deg);
-   /* Поворот на 180 градусов при открытии списка */
+   /* Положение стрелки при открытом списке */
 }
 
 .btn__border:hover+.btn__border-a {
