@@ -1,4 +1,35 @@
 "use strict";
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".language-select__btn");
+  const options = document.querySelector(".language-select__options");
+  const optionItems = options.querySelectorAll(".language-select__option");
+
+  button.addEventListener("click", function () {
+    options.style.display = options.style.display === "flex" ? "none" : "flex";
+    const icon = button.querySelector(".language-select__icon");
+    icon.style.transform = options.style.display === "flex" ? "rotate(180deg)" : "rotate(0)";
+  });
+
+  optionItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      const selectedValue = item.getAttribute("data-value");
+      const selectedText = item.textContent;
+
+      const currentSelectedValue = button.getAttribute("data-value");
+      const currentSelectedText = button.textContent;
+
+      button.textContent = selectedText;
+      button.setAttribute("data-value", selectedValue);
+      item.textContent = currentSelectedText;
+      item.setAttribute("data-value", currentSelectedValue);
+
+      options.style.display = "none";
+      const icon = button.querySelector(".language-select__icon");
+      icon.style.transform = "rotate(0)";
+    });
+  });
+});
+
 
 const burgerCheckbox = document.getElementById("burger"); // Отримайте посилання на чекбокс бургер-меню
 const openIcon = document.getElementById("open-icon"); // Отримайте посилання на іконку для відкритого стану

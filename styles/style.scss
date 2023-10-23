@@ -5,6 +5,7 @@ html {
 body {
    margin: 0 auto;
    box-sizing: border-box;
+   background-color: #F7F8FE;
 }
 
 a {
@@ -92,7 +93,7 @@ button {
 .burger-menu {
    display: none;
 
-   @media(max-width:986px) {
+   @media(max-width:987px) {
       display: block;
    }
 
@@ -110,14 +111,12 @@ button {
       left: 0;
       padding: 32px 9% 9%;
       font-size: 18px;
-      background-color: white;
+      background-color: #F7F8FE;
       width: 100%;
       box-sizing: border-box;
       transform: translateX(-100%);
-      /* Скрыть меню за пределами видимости */
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.5s ease-in-out;
 
-      /* Добавить анимацию */
       @media (max-width:768px) {
          padding: 32px 24px 56px 24px;
       }
@@ -159,8 +158,8 @@ button {
    justify-content: space-between;
    gap: 56px;
 
-   @media (max-width:1064px) {
-      gap: 24px;
+   @media (max-width:1081px) {
+      gap: 20px;
    }
 
    @media (max-width:768px) {
@@ -171,8 +170,8 @@ button {
       display: flex;
       gap: 56px;
 
-      @media (max-width:1064px) {
-         gap: 24px;
+      @media (max-width:1081px) {
+         gap: 20px;
       }
    }
 
@@ -180,6 +179,11 @@ button {
       display: flex;
       align-items: center;
       gap: 24px;
+
+      @media (max-width:1081px) {
+         gap: 20px;
+      }
+
    }
 
    &__logo {
@@ -199,7 +203,7 @@ button {
       gap: 24px;
       padding: 0;
 
-      @media (max-width:986px) {
+      @media (max-width:987px) {
          display: none;
       }
    }
@@ -225,21 +229,54 @@ button {
 }
 
 .language-select {
-   font-family: 'Roboto', sans-serif;
-   font-size: 14px;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   -ms-appearance: none;
-   appearance: none;
-   background-color: white;
-   border: none;
-   cursor: pointer;
+   position: relative;
+   display: inline-block;
 
-   &__option {
+   &__btn {
+      padding: 8px;
+      background-color: #F7F8FE;
+      border: none;
+      cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
-      display: block;
+      display: flex;
+      align-items: center;
    }
+
+   &__icon {
+      transition: transform 0.5s;
+   }
+
+   &__options {
+      margin: 0;
+      list-style: none;
+      padding: 8px;
+      gap: 10px;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: #fff;
+   }
+
+   &__option {
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+
+      &:hover {
+         text-decoration: underline;
+         text-underline-offset: 5px;
+         text-decoration-thickness: 1px;
+         text-decoration-color: #FF274E;
+      }
+   }
+}
+
+.language-select.open .language-select__icon {
+   transform: rotate(180deg);
+   /* Поворот на 180 градусов при открытии списка */
 }
 
 .btn__border:hover+.btn__border-a {
@@ -288,7 +325,7 @@ button {
    }
 
    &__vanish {
-      @media (max-width:986px) {
+      @media (max-width:987px) {
          display: none;
       }
    }
@@ -300,7 +337,7 @@ button {
    padding-right: 5%;
    display: flex;
 
-   @media (max-width:986px) {
+   @media (max-width:987px) {
       flex-direction: column;
    }
 
@@ -321,14 +358,14 @@ button {
    &__block {
       width: 50%;
 
-      @media (max-width:986px) {
+      @media (max-width:987px) {
          width: 100%;
       }
 
       &_left {
          order: 1;
 
-         @media (max-width:986px) {
+         @media (max-width:987px) {
             order: 2;
          }
       }
@@ -336,7 +373,7 @@ button {
       &_right {
          order: 2;
 
-         @media (max-width:986px) {
+         @media (max-width:987px) {
             order: 1;
          }
       }

@@ -45,12 +45,14 @@
         </nav>
       </div>
       <div class="header__right">
-        <select class="language-select" id="language-select">
-          <option class="language-select__option" value="en">EN</option>
-          <option class="language-select__option" value="fr">FR</option>
-          <option class="language-select__option" value="uk">UK</option>
-          <option class="language-select__option" value="ru">RU</option>
-        </select>
+        <div class="language-select">
+          <button class="language-select__btn" data-value="en">EN</button>
+          <ul class="language-select__options">
+            <li class="language-select__option" data-value="fr">FR</li>
+            <li class="language-select__option" data-value="uk">UK</li>
+            <li class="language-select__option" data-value="ru">RU</li>
+          </ul>
+        </div>
 
         <div class="burger-menu">
           <input class="burger-menu__input" id="burger" type="checkbox" />
@@ -101,6 +103,9 @@
             </li>
             <li class="burger-menu__item">
               <a class="header__a" href="../index.html#contacts">Contacts</a>
+            </li>
+            <li class="burger-menu__item">
+              <a class="header__a" href="policy.html">Privacy Policy</a>
             </li>
           </ul>
         </div>
